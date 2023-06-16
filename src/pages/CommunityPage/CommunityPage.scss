@@ -1,5 +1,4 @@
 .container {
-    background: #edf1f2;
     width: 85%;
     margin-left: 5.15vw;
     &__header{
@@ -10,7 +9,7 @@
         height: 4rem;
         font-size: 0.75rem;
         padding: 0 2rem;
-        border-bottom: 1px #9b9b9b;
+        border-bottom: 10px #9b9b9b;
         &--current{
             color: #f56c2d;
             border-bottom: 2px #f56c2d;
@@ -50,11 +49,20 @@
     }
     
 }
-.borders{
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-}
 
-.titles{
-    text-align: left;
+.taglines{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    &__buttonconstraint{
+        width: 12.5rem;
+        text-align: end;
+    }
+    &__titles{
+        text-align: left;
+    }
+    &__searched{
+        color: #f56c2d;
+    }
 }

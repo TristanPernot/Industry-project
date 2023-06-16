@@ -15,7 +15,7 @@ function App() {
 
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
+      {/* <Navbar/> */}
         {/* <div>
           <Button text={"See All"} />
         </div>

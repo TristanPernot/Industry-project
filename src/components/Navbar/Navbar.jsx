@@ -4,6 +4,7 @@ import { useState  } from 'react';
 import "./Navbar.scss";
 import searchicon from "../../assests/Logos/Search.png"
 import HomePage from "../../pages/homepage/homepage";
+import CommunityPage from "../../pages/CommunityPage/CommunityPage.jsx";
 
 
 function Navbar(){
@@ -48,7 +49,6 @@ function Navbar(){
           <div className="usercontent">
             {activeTab === 0 && (
               <div className="profiledetails">
-                <h1>My Home</h1>
 
                 <div className="personeldetails">
                 <HomePage />
@@ -61,7 +61,7 @@ function Navbar(){
             )}
             {activeTab === 1 && (
               <div>
-                <h1>Comunity</h1>
+                <CommunityPage />                
               </div>
             )}
             {activeTab === 2 && (

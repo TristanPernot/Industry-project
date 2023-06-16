@@ -28,12 +28,19 @@ function CommunityPage() {
                 </li>
             </ul>
             <div className='borders'>
+                <div className='taglines'>
+                    <p className='taglines__titles'>Communities that have <span className='taglines__searched'>Art Gallery</span> event</p>
+    
+                <div className='taglines__buttonconstraint'>
+                    <Button text={"See All"} />
+                </div>
+            </div>
             <Link to='/mycommunity'>
             <div className='container__communities'>
             <img src={`${Communityimg1}`} alt="Communityimg1" />
                 <div className='container__communities--box'>
                     <h4>Community Name</h4>
-                    <p>60 members</p>
+                    <p>478 members</p>
                 </div>
             </div>
             </Link>
@@ -55,7 +62,12 @@ function CommunityPage() {
                 </div>
             </div>
             </Link>
-            <p className='titles'>All Events Relating to</p>
+            <div className='taglines'>
+            <p className='taglines__titles'>All Events Relating to <span className='taglines__searched'>Art Gallery</span></p>
+            <div className='taglines__buttonconstraint'>
+                    <Button text={"See All"} />
+                </div>
+            </div>
             <div className='container__communities'>
             <img src={`${Eventimg1}`} alt="Eventimg1" />
                 <div className='container__communities--box'>
@@ -74,7 +86,7 @@ function CommunityPage() {
             <img src={`${Eventimg3}`} alt="Eventimg3" />
                 <div className='container__communities--box'>
                     <h4>Event Space</h4>
-                    <p>7341 members have signed up</p>
+                    <p>7,341 members have signed up</p>
                 </div>
             </div>
             </div>
