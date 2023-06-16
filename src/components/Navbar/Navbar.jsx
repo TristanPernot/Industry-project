@@ -1,0 +1,107 @@
+import React from "react";
+import { Link } from 'react-router-dom';
+import { useState  } from 'react';
+
+
+function Navbar(){
+
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+
+  return (
+    <>
+        <div  className="featuresdisplay">
+          <div className="navbarleft">
+
+            <button className="navigationbtn" onClick={() => handleTabClick(0)}>My Home</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(1)}>Comunity</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(2)}>My community</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(3)}>My Events</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(4)}>EA PLAY</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(5)}>Store</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(6)}>Browse Games</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(7)}>Deals</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(8)}>My Game Library</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(9)}>Notifications</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(10)}>Help</button>
+          </div>
+          <div className="usercontent">
+            {activeTab === 0 && (
+              <div className="profiledetails">
+                <h1>My Home</h1>
+
+                <div className="personeldetails">
+                  <h2>Home</h2>
+                 
+                  <div>
+                   
+                  </div>
+                </div>
+              </div>
+            )}
+            {activeTab === 1 && (
+              <div>
+                <h1>Comunit</h1>
+              </div>
+            )}
+            {activeTab === 2 && (
+              <div>
+                <h1>My community</h1>
+              </div>
+            )}
+            {activeTab === 3 && (
+              <div>
+                <h1>My Events</h1>
+              </div>
+            )}
+            {activeTab === 4 && (
+              <div>
+                <h1>EA PLAY</h1>
+              </div>
+            )}
+            {activeTab === 5 && (
+              <div>
+                <h1>Store</h1>
+              </div>
+            )}
+            {activeTab === 6 && (
+              <div>
+                <h1>Browse Games</h1>
+            
+              </div>
+            )}
+            {activeTab === 7 && (
+              <div>
+                <h1>Deals</h1>
+            
+              </div>
+            )}
+            {activeTab === 8 && (
+              <div>
+                <h1>My Game Library</h1>
+            
+              </div>
+            )}
+            {activeTab === 9 && (
+              <div>
+                <h1>Notifications</h1>
+            
+              </div>
+            )}
+            {activeTab === 10 && (
+              <div>
+                <h1>Help</h1>
+            
+              </div>
+            )}
+          </div>
+        </div>
+    </>
+  )
+}
+
+
+export default Navbar
