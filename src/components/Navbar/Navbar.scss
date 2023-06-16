@@ -21,16 +21,19 @@ background-color:#1E262C ;
 border: none;
 padding-top: 1rem;
 padding-bottom: 1rem;
+transition: transform 0.2s ease-in-out;
 }
 .navigationbtn:hover {
-  background-color: #7c8085;
+  background-color: #575c61;
+  transform: scale(1.1);
 }
-.navhead-seracharea{
-    width: 20%;
+.navhead-searcharea{
+    width: 80%;
     border-radius:0.25rem;
     display: inline-block;
     background-color: white;
-
+    margin-bottom: 1rem;
+   
 }
 .navhead-input{
   height: 2.25rem;
@@ -71,6 +74,6 @@ padding-bottom: 1rem;
   padding-right: 1rem;
 
 }
-.personeldetails{
- 
+.userprofile{
+  width: 15.5rem;
 }

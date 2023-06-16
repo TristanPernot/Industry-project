@@ -5,6 +5,7 @@ import "./Navbar.scss";
 import searchicon from "../../assests/Logos/Search.png";
 import HomePage from "../../pages/homepage/homepage";
 import MyCommunity from "../MyCommunity/MyCommunity";
+import userprofile from "../../assests/user.png";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState(0);
@@ -12,7 +13,9 @@ function Navbar() {
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
-
+  // const handleSearchClick = () => {
+  //   searchInputRef.current.focus();
+  // };
   return (
     <>
       <div className="featuresdisplay">
@@ -88,6 +91,9 @@ function Navbar() {
             >
               Help
             </button>
+            <div>
+              <img className="userprofile" src={userprofile}></img>
+            </div>
           </div>
 
           <div className="userprofile">
