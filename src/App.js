@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/homepage/homepage.jsx";
 import CommunityPage from "./pages/CommunityPage/CommunityPage.jsx";
 import Mycommunitypage from "./pages/Mycommunitypage/Mycommunitypage.jsx";
+import MyCommunityAndEvent from "./components/MyCommunityAndEvent/MyCommunityAndEvent";
 function App() {
   return (
 
@@ -31,6 +32,9 @@ function App() {
           <Route path="/communities" element={<CommunityPage />} />
           <Route path="/mycommunity" element={<Mycommunitypage />} />
         </Routes>
+        <div>
+          <MyCommunityAndEvent />
+        </div>
       </BrowserRouter>
     </div>
   );
