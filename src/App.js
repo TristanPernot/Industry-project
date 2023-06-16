@@ -5,11 +5,13 @@ import "./App.css";
 //Components
 import Button from "./components/Button/Button";
 import MyCommunity from "./components/MyCommunity/MyCommunity";
-
+import Navbar from "./components/Navbar/Navbar"; 
 function App() {
   return (
+
     <div className="App">
       <BrowserRouter>
+      <Navbar/>
         <div>
           <Button text={"See All"} />
         </div>
