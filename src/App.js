@@ -21,8 +21,8 @@ function App() {
         </div>
         <div>
           <Button text={"Join Event"} />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <MyCommunity />
         </div> */}
 
