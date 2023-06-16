@@ -4,7 +4,7 @@ import { useState  } from 'react';
 import "./Navbar.scss";
 import searchicon from "../../assests/Logos/Search.png"
 import HomePage from "../../pages/homepage/homepage";
-
+import userprofile from "../../assests/user.png"
 
 function Navbar(){
 
@@ -13,7 +13,9 @@ function Navbar(){
   const handleTabClick = (index) => {
     setActiveTab(index);
   };
-
+  // const handleSearchClick = () => {
+  //   searchInputRef.current.focus();
+  // };
   return (
     <>
         <div  className="featuresdisplay">
@@ -39,9 +41,8 @@ function Navbar(){
             </div>
          
 
-            <div className="userprofile">
-              <h4>userprofile</h4>
-              <img></img>
+            <div >
+              <img className="userprofile" src={userprofile}></img>
             </div>
           </div>
          

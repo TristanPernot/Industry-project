@@ -12,15 +12,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Navbar/>
-        <div>
+        {/* <div>
           <Button text={"See All"} />
         </div>
         <div>
           <Button text={"Join Event"} />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <MyCommunity />
-        </div>
+        </div> */}
 
         <Routes></Routes>
       </BrowserRouter>
