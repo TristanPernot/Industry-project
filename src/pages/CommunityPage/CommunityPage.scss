@@ -1,12 +1,10 @@
 .container {
     background: #edf1f2;
-    border-radius: 0.1875rem;
     width: 80%;
     margin-left: 5.15vw;
     &__header{
         display: flex;
         list-style: none;
-        border-bottom: none;
         padding: 0;
         margin: 0;
         height: 4rem;
@@ -28,6 +26,22 @@
             width: 5rem;
             align-items: center;
             font-size: 0.8rem;
+        }
+    }
+
+    &__communities{
+        width: 15.6875rem;
+        height: 15.0625rem;
+        flex-grow: 0;
+        margin: 0 2rem 0 0;
+        background-color: #6f6f6f;
+        &--box{
+            width: 15.6875rem;
+            height: 9.25rem;
+            flex-grow: 0;
+            opacity: 0.8;
+            background-color: #1e262c;
+            color: #FFF;
         }
     }
     
