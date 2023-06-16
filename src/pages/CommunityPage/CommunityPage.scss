@@ -1,0 +1,14 @@
+.container {
+    background: #edf1f2;
+    border-radius: 0.1875rem;
+    padding-bottom: 1rem;
+    width: 90%;
+    margin-left: 5.15vw;
+    &__header{
+        &--current{
+            color: #f56c2d;
+            border-bottom: 2px #f56c2d;
+        
+        }
+    }
+}
