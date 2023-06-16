@@ -30,12 +30,17 @@
     }
 
     &__communities{
+        display: initial;
+        position: relative;
         width: 15.6875rem;
         height: 15.0625rem;
         flex-grow: 0;
         margin: 0 2rem 0 0;
         background-color: #6f6f6f;
         &--box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
             width: 15.6875rem;
             height: 9.25rem;
             flex-grow: 0;

@@ -26,7 +26,20 @@ function CommunityPage() {
                     <h4>Community Name</h4>
                     <p>60 members</p>
                 </div>
-
+            </div>
+            <div className='container__communities'>
+            <img src={`${Communityimg2}`} alt="Communityimg2" />
+                <div className='container__communities--box'>
+                    <h4>Community Name</h4>
+                    <p>1,200 members</p>
+                </div>
+            </div>
+            <div className='container__communities'>
+            <img src={`${Communityimg3}`} alt="Communityimg3" />
+                <div className='container__communities--box'>
+                    <h4>Community Name</h4>
+                    <p>12 members</p>
+                </div>
             </div>
         </div>
 
