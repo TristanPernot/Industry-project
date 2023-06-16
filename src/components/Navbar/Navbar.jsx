@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./Navbar.scss";
 import searchicon from "../../assests/Logos/Search.png";
 import HomePage from "../../pages/homepage/homepage";
-import MyCommunity from "../MyCommunity/MyCommunity";
+import MyCommunityAndEvent from "../MyCommunityAndEvent/MyCommunityAndEvent";
 import userprofile from "../../assests/user.png";
 
 function Navbar() {
@@ -166,7 +166,7 @@ function Navbar() {
           )}
         </div>
         <div>
-          <MyCommunity />
+          <MyCommunityAndEvent />
         </div>
       </div>
     </>
