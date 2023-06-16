@@ -1,22 +1,29 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import logo from "./logo.svg";
 import "./App.css";
 //Components
 import Button from "./components/Button/Button";
-//Pages
-import HomePage from "./pages/homepage/homepage.jsx";
+import MyCommunity from "./components/MyCommunity/MyCommunity";
 import Navbar from "./components/Navbar/Navbar"; 
 function App() {
   return (
 
     <div className="App">
-          <Navbar/>
-      {/* <div>
-        <Button text={"See All"} />
-      </div>
-      <div>
-        <Button text={"Join Event"} />
-      </div> */}
-  
+      <BrowserRouter>
+      <Navbar/>
+        <div>
+          <Button text={"See All"} />
+        </div>
+        <div>
+          <Button text={"Join Event"} />
+        </div>
+        <div>
+          <MyCommunity />
+        </div>
+
+        <Routes></Routes>
+      </BrowserRouter>
     </div>
   );
 }
