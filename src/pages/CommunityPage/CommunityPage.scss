@@ -1,6 +1,6 @@
 .container {
     background: #edf1f2;
-    width: 80%;
+    width: 85%;
     margin-left: 5.15vw;
     &__header{
         display: flex;
@@ -34,7 +34,6 @@
         position: relative;
         width: 15.6875rem;
         height: 15.0625rem;
-        flex-grow: 0;
         margin: 0 2rem 0 0;
         background-color: #6f6f6f;
         &--box{
@@ -43,7 +42,6 @@
             left: 0;
             width: 15.6875rem;
             height: 9.25rem;
-            flex-grow: 0;
             opacity: 0.8;
             background-color: #1e262c;
             color: #FFF;

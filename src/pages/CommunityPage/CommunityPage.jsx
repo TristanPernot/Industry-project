@@ -1,5 +1,7 @@
 import './CommunityPage.scss'
+//components
 import Button from '../../components/Button/Button.jsx'
+// communityimgs
 import Communityimg1 from '../../assests/Community_1.png'
 import Communityimg2 from '../../assests/Community_2.png'
 import Communityimg3 from '../../assests/Community_3.png'
