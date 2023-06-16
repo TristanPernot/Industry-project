@@ -30,6 +30,7 @@
     }
 
     &__communities{
+        padding-top: 5rem;
         display: initial;
         position: relative;
         width: 15.6875rem;
@@ -48,4 +49,12 @@
         }
     }
     
+}
+.borders{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.titles{
+    text-align: left;
 }
