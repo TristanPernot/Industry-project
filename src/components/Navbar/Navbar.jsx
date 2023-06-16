@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useState  } from 'react';
+import "./Navbar.scss";
 
 
 function Navbar(){
@@ -15,8 +16,14 @@ function Navbar(){
     <>
         <div  className="featuresdisplay">
           <div className="navbarleft">
+            <div className="searchandbuttons">
 
-            <button className="navigationbtn" onClick={() => handleTabClick(0)}>My Home</button>
+            <div className="searchbar">
+              <input type="text" placeholder="Search" />
+              <button>Search</button>
+            </div>
+
+            <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(0)}>My Home</button>
             <button className="navigationbtn" onClick={() => handleTabClick(1)}>Comunity</button>
             <button className="navigationbtn" onClick={() => handleTabClick(2)}>My community</button>
             <button className="navigationbtn" onClick={() => handleTabClick(3)}>My Events</button>
@@ -27,7 +34,15 @@ function Navbar(){
             <button className="navigationbtn" onClick={() => handleTabClick(8)}>My Game Library</button>
             <button className="navigationbtn" onClick={() => handleTabClick(9)}>Notifications</button>
             <button className="navigationbtn" onClick={() => handleTabClick(10)}>Help</button>
+            </div>
+         
+
+            <div className="userprofile">
+              <h4>userprofile</h4>
+              <img></img>
+            </div>
           </div>
+         
           <div className="usercontent">
             {activeTab === 0 && (
               <div className="profiledetails">
@@ -44,7 +59,7 @@ function Navbar(){
             )}
             {activeTab === 1 && (
               <div>
-                <h1>Comunit</h1>
+                <h1>Comunity</h1>
               </div>
             )}
             {activeTab === 2 && (

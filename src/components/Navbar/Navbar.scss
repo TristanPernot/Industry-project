@@ -1,0 +1,47 @@
+.navbarContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.navbarleft {
+  background-color: #1E262C;
+  padding: 20px;
+  width: 20%;
+  display: inline-block;
+  height: 100%;
+}
+
+
+
+.navigationbtn {
+  display: block;
+width: 100%;
+color: #F8F8F8;
+background-color:#1E262C ;
+border: none;
+padding-top: 2rem;
+}
+
+.featuresdisplay{
+  display: flex;
+  flex-direction: row;
+}
+
+.usercontent {
+  flex: 1;
+  padding: 20px;
+
+}
+.searchandbuttons{
+  margin-top: 7rem;
+}
+.userprofile{
+  margin-top: 18rem;
+}
+
+
+
+#headnav{
+  font-size: 1rem;
+  font-weight: 700;
+}

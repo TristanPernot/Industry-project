@@ -6,17 +6,11 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
-    <div className="App">
-      <div>
-        <Button text={"See All"} />
-      </div>
-      <div>
-        <Button text={"Join Event"} />
-      </div>
-    </div>
+      <Navbar />
+  
     
     
-    <Navbar />
+  
     </>
     
   );
