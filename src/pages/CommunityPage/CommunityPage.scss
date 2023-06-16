@@ -1,14 +1,34 @@
 .container {
     background: #edf1f2;
     border-radius: 0.1875rem;
-    padding-bottom: 1rem;
-    width: 90%;
+    width: 80%;
     margin-left: 5.15vw;
     &__header{
+        display: flex;
+        list-style: none;
+        border-bottom: none;
+        padding: 0;
+        margin: 0;
+        height: 4rem;
+        font-size: 0.75rem;
+        padding: 0 2rem;
+        border-bottom: 1px #9b9b9b;
         &--current{
             color: #f56c2d;
             border-bottom: 2px #f56c2d;
+            display: flex;
+            width: 5rem;
+            align-items: center;
+            font-size: 0.8rem;
         
         }
+        &--item{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 5rem;
+            align-items: center;
+            font-size: 0.8rem;
+        }
     }
+    
 }
