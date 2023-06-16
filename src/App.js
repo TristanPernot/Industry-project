@@ -13,10 +13,9 @@ import Mycommunitypage from "./pages/Mycommunitypage/Mycommunitypage.jsx";
 import MyCommunityAndEvent from "./components/MyCommunityAndEvent/MyCommunityAndEvent";
 function App() {
   return (
-
     <div className="App">
       <BrowserRouter>
-      {/* <Navbar/> */}
+        <Navbar />
         {/* <div>
           <Button text={"See All"} />
         </div>

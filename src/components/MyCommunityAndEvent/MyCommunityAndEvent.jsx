@@ -12,7 +12,7 @@ function MyCommunityAndEvent() {
   return (
     <div className="section">
       <img
-        onClick={() => handleClick("/")}
+        onClick={() => handleClick("/communities")}
         className="section-list-item-img"
         src={myCommunityEvent}
         alt="image1"
