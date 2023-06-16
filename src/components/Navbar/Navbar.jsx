@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useState  } from 'react';
 import "./Navbar.scss";
+import searchicon from "../../assests/Logos/Search.png"
+import HomePage from "../../pages/homepage/homepage";
 
 
 function Navbar(){
@@ -18,20 +20,20 @@ function Navbar(){
           <div className="navbarleft">
             <div className="searchandbuttons">
 
-            <div className="searchbar">
-              <input type="text" placeholder="Search" />
-              <button>Search</button>
-            </div>
+            <div className="navhead-searcharea">
+      <img className="navhead-searchicon" src={searchicon} alt="search" />
+      <input className="navhead-input" type="text" name="name" placeholder="Search"/>
+      </div>
 
             <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(0)}>My Home</button>
-            <button className="navigationbtn" onClick={() => handleTabClick(1)}>Comunity</button>
+            <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(1)}>Community</button>
             <button className="navigationbtn" onClick={() => handleTabClick(2)}>My community</button>
             <button className="navigationbtn" onClick={() => handleTabClick(3)}>My Events</button>
-            <button className="navigationbtn" onClick={() => handleTabClick(4)}>EA PLAY</button>
-            <button className="navigationbtn" onClick={() => handleTabClick(5)}>Store</button>
+            <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(4)}>EA PLAY</button>
+            <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(5)}>Store</button>
             <button className="navigationbtn" onClick={() => handleTabClick(6)}>Browse Games</button>
             <button className="navigationbtn" onClick={() => handleTabClick(7)}>Deals</button>
-            <button className="navigationbtn" onClick={() => handleTabClick(8)}>My Game Library</button>
+            <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(8)}>My Game Library</button>
             <button className="navigationbtn" onClick={() => handleTabClick(9)}>Notifications</button>
             <button className="navigationbtn" onClick={() => handleTabClick(10)}>Help</button>
             </div>
@@ -49,7 +51,7 @@ function Navbar(){
                 <h1>My Home</h1>
 
                 <div className="personeldetails">
-                  <h2>Home</h2>
+                <HomePage />
                  
                   <div>
                    

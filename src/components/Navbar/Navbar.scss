@@ -19,9 +19,32 @@ width: 100%;
 color: #F8F8F8;
 background-color:#1E262C ;
 border: none;
-padding-top: 2rem;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
+.navigationbtn:hover {
+  background-color: #7c8085;
+}
+.navhead-seracharea{
+    width: 20%;
+    border-radius:0.25rem;
+    display: inline-block;
+    background-color: white;
 
+}
+.navhead-input{
+  height: 2.25rem;
+  width: 80%;
+  border: none;
+  border-radius:0.25rem;
+  background-color: white;
+}
+.navhead-searchicon{
+  vertical-align: middle;
+  border: none;
+ border-radius:0.25rem;
+ 
+}
 .featuresdisplay{
   display: flex;
   flex-direction: row;
@@ -44,4 +67,10 @@ padding-top: 2rem;
 #headnav{
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 0;
+  padding-right: 1rem;
+
+}
+.personeldetails{
+ 
 }
