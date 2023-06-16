@@ -63,6 +63,9 @@ function MyCommunity() {
           </div>
         </li>
       </ul>
+      <div>
+        <Button text={"See All"}></Button>
+      </div>
     </div>
   );
 }
