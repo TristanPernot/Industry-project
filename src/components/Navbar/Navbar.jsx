@@ -28,7 +28,9 @@ function Navbar(){
       </div>
 
             <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(0)}>My Home</button>
+            <Link to="/communities">
             <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(1)}>Community</button>
+            </Link>
             <button className="navigationbtn" onClick={() => handleTabClick(2)}>My community</button>
             <button className="navigationbtn" onClick={() => handleTabClick(3)}>My Events</button>
             <button className="navigationbtn" id="headnav" onClick={() => handleTabClick(4)}>EA PLAY</button>
@@ -46,13 +48,13 @@ function Navbar(){
             </div>
           </div>
          
-          <div className="usercontent">
+          {/* <div className="usercontent">
             {activeTab === 0 && (
               <div className="profiledetails">
-                <h1>My Home</h1>
+                 <h1>My Home</h1> 
 
                 <div className="personeldetails">
-                <HomePage />
+                 <HomePage /> 
                  
                   <div>
                    
@@ -115,8 +117,8 @@ function Navbar(){
             
               </div>
             )}
-          </div>
-        </div>
+          </div>*/}
+        </div> 
     </>
   )
 }
